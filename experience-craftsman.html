@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsman Automation Experience - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links to your main style.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Re-usable Header -->
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#experience" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Mechatronics Engineer <span class="company-detail">| Craftsman Automation</span></h2>
+                <p class="date-detail">Jan 2022 - May 2022</p>
+
+                <div class="card experience-details-content">
+                    
+                    <!-- First Local Video -->
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <!-- UPDATE THE SRC PATH BELOW -->
+                            <source src="Videos/Pick and Place Robot .mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <!-- Second Local Video -->
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <!-- UPDATE THE SRC PATH BELOW -->
+                            <source src="Videos/Pick and Place Robot Autonomous mode.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <h4>Key Responsibilities and Achievements:</h4>
+                    <ul>
+                        <li>Designed an IoT-driven pick and place robot employing Arduino Uno, enabling seamless wireless control via a cloud-connected mobile application.</li>
+                        <li>Enhanced the pick and place robot by implementing autonomous operational capabilities, moving beyond solely remote control.</li>
+                        <li>Developed and integrated sensor systems for object detection and environmental awareness for the autonomous pick and place robot.</li>
+                        <li>Programmed microcontroller logic for precise motor control, movement sequences, and wireless communication protocols.</li>
+                        <li>Created the mechanical design and assembly of the robotic system, ensuring robust and reliable operation.</li>
+                        <li>Troubleshot and resolved hardware and software issues during the development and testing phases.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailCraftsman"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailCraftsman')) {
+             document.getElementById('currentYearDetailCraftsman').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
+
+

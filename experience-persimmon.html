@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persimmon Technologies Experience - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links to your main style.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Re-usable Header -->
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#experience" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Robotics Software Engineer <span class="company-detail">| Persimmon Technologies</span></h2>
+                <p class="date-detail">June 2024 - December 2024</p>
+
+                <div class="card experience-details-content">
+                    <!-- No video section for this experience -->
+
+                    <h4>Key Responsibilities and Achievements:</h4>
+                    <ul>
+                        <li>Diagnosed and resolved complex issues related to determining slip conditions for robotic end effectors, ensuring operational safety and precision.</li>
+                        <li>Performed detailed kinematic analysis on various robotic systems to validate and ensure accurate motion execution paths and parameters.</li>
+                        <li>Systematically addressed and overcame setup challenges associated with specialized robotics tools and test fixtures, leading to streamlined testing processes and improved efficiency in robot simulations.</li>
+                        <li>Identified and resolved performance bottlenecks in robot motion trajectory calculation algorithms.</li>
+                        <li>Re-engineered critical trajectory calculation code from MATLAB to Python, optimizing it for direct execution on a Linux-based real-time control system.</li>
+                        <li>Achieved a 40% reduction in processing time for trajectory calculations through code optimization, significantly enhancing real-time execution capabilities, overall system efficiency, and responsiveness.</li>
+                        <!-- Add more specific details: What kind of robots? What tools? What was the impact of improved efficiency? -->
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailPersimmon"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailPersimmon')) {
+             document.getElementById('currentYearDetailPersimmon').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

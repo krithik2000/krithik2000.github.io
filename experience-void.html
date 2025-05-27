@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Robotics Experience - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links to your main style.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Re-usable Header -->
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#experience" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Robotics Software Engineer <span class="company-detail">| Void Robotics</span></h2>
+                <p class="date-detail">Jan 2025 - Present</p>
+
+                <div class="card experience-details-content">
+                    <!-- No video section for this experience -->
+
+                    <h4>Key Responsibilities and Achievements:</h4>
+                    <ul>
+                        <li>Configured and logged into ngrok on an Nvidia Orin Nano, built and deployed Docker containers, and executed bash scripts for software setup and execution.</li>
+                        <li>Developed and tested a simulated TurtleBot3 on a personal machine, successfully implementing waypoint navigation to four predefined locations using ROS 2, Nav2, and RViz2.</li>
+                        <li>Performed remote system deployment and containerization, developed an autonomous navigation simulation, and implemented interprocess communication using ROS 2.</li>
+                        <li>Built a generalized image processing pipeline in C++ to detect and count objects across diverse images, ensuring consistent performance without image-specific logic.</li>
+                        <!-- Consider adding details like:
+                            - Purpose of the ngrok setup and deployment.
+                            - Challenges or specific configurations in the TurtleBot3 simulation.
+                            - Specifics of the remote system or the interprocess communication methods.
+                            - Types of objects the image processing pipeline was designed for, or performance metrics.
+                        -->
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailVoid"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailVoid')) {
+             document.getElementById('currentYearDetailVoid').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
