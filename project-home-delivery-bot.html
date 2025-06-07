@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Delivery Bot (Udacity Nanodegree) - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="Krithik_Rajavelu_Resume.pdf" class="nav-button resume-button" download="Krithik_Rajavelu_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+
+                <h2 class="project-main-title-long">Home-Delivery Bot | Udacity Nanodegree (Scholarship Scholar)</h2>
+                <!-- Date detail removed -->
+
+                <div class="card project-details-content">
+
+                    <!-- IMAGE 1: Building Editor -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Building Editor</h4>
+                        <div class="image-container project-image" style="max-width: 720px; margin: 0 auto;">
+                            <img src="images/building_editor_gazebo.png" alt="Gazebo Building Editor View for Home Delivery Bot">
+                        </div>
+                    </div>
+                    <!-- End IMAGE 1 -->
+
+                    <!-- IMAGE 2: Precise Localization -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Precise Localization</h4>
+                        <div class="image-container project-image" style="max-width: 720px; margin: 0 auto;">
+                            <img src="images/precise_localization_gazebo.png" alt="Gazebo Precise Localization with AMCL">
+                        </div>
+                    </div>
+                    <!-- End IMAGE 2 -->
+
+                    <!-- NEW SECTION: Mapping and Navigation (Side-by-Side Images) -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 15px; font-weight: 500;">Mapping and Navigation</h4>
+                        <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                            <!-- Left Image -->
+                            <div class="image-container project-image" style="flex: 1; min-width: 280px; max-width: 48%;">
+                                <img src="images/mapping_slam_result.png" alt="SLAM mapping result showing robot path">
+                            </div>
+                            <!-- Right Image -->
+                            <div class="image-container project-image" style="flex: 1; min-width: 280px; max-width: 48%;">
+                                <img src="images/navigation_rviz_3d_view.png" alt="Rviz 3D view of robot navigating in mapped environment">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End NEW SECTION -->
+
+
+                    <!-- First YouTube Video -->
+                    <div class="video-container youtube-embed">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DvKze5xJrm0?si=EM1NIvVEY4NalLxV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Second YouTube Video -->
+                    <div class="video-container youtube-embed">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5MdVGWF0e5M?si=yZ77Wi9WJidowPPC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>Project Overview and Key Contributions:</h4>
+                    <ul>
+                        <li>Successfully developed a fully functional home-delivery robot within the Gazebo simulation environment using ROS (Robot Operating System).</li>
+                        <li>Designed and implemented robust feedback control systems to manage the robot's state dynamics, ensuring stable and predictable motion.</li>
+                        <li>Integrated and configured various sensors for perception and localization, including Rotary Encoders, Odometry (Odom), and an Inertial Measurement Unit (IMU).</li>
+                        <li>Implemented advanced sensor fusion techniques to combine data from multiple sensors, enhancing the accuracy and reliability of the robot's localization.</li>
+                        <li>Successfully deployed the AMCL (Adaptive Monte Carlo Localization) package for robust robot localization within a mapped environment.</li>
+                        <li>Developed path planning and navigation algorithms to enable the robot to autonomously navigate to target delivery locations while avoiding obstacles.</li>
+                        <li>Completed as part of the Udacity Robotics Software Engineer Nanodegree, for which a scholarship was awarded.</li>
+                    </ul>
+
+                    <!-- Image for the Project (Certificate) - REMAINS AT THE END -->
+                    <div class="image-container project-image">
+                        <img src="images/Udacity Course Certificate.png" alt="Udacity Course Certificate">
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailProjectHomeBot"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailProjectHomeBot')) {
+             document.getElementById('currentYearDetailProjectHomeBot').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

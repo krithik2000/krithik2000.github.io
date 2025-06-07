@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Robot Garden Maintenance - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Re-usable Header -->
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="Krithik_Rajavelu_Resume.pdf" class="nav-button resume-button" download="Krithik_Rajavelu_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Multi-Robot Garden Maintenance Teams</h2>
+                
+
+                <div class="card project-details-content"> 
+                    
+                    <!-- IMAGE 1: R2 Robots Path Simulation -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">R2 Robots Path Simulation</h4>
+                        <div class="image-container project-image" style="max-width: 720px; margin: 0 auto;">
+                            <img src="images/r2_robots_path_simulation.png" alt="">
+                        </div>
+                    </div>
+                    <!-- End IMAGE 1 -->
+
+                    <!-- NEW IMAGE 2: Robot Travel -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Robot Travel</h4>
+                        <div class="image-container project-image" style="max-width: 720px; margin: 0 auto;">
+                            <!-- Make sure this image is in your 'images' folder -->
+                            <img src="images/robot_travel_simulation.png" alt="">
+                        </div>
+                    </div>
+                    <!-- End NEW IMAGE 2 -->
+
+                    <!-- First Local Video -->
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <source src="Videos/R2RobotSimulation.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <!-- Second Local Video -->
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <source src="Videos/MultiRobotFlocking_2GrassRegions_10_Robots.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <h4>Project Overview and Key Contributions:</h4>
+                    <ul>
+                        <li>Led the implementation of advanced Voronoi cells-based control algorithms for a team of autonomous garden maintenance robots.</li>
+                        <li>Focused on lawn mowing and watering applications, optimizing path planning and area coverage strategies using the Voronoi tessellation approach.</li>
+                        <li>Achieved a quantifiable 20% improvement in path-tracking precision for the robot teams, particularly in dynamic and cluttered garden environments.</li>
+                        <li>Designed and implemented robust collision-avoidance protocols specifically tailored for multi-robot interactions within the garden maintenance scenario.</li>
+                        <li>Ensured efficient task allocation and coordination between robots to maximize coverage and minimize redundant operations.</li>
+                        <li>Utilized ROS (Robot Operating System) for simulation, control, and communication between the robotic agents.</li>
+                        <li>Conducted extensive testing and validation in simulated environments (e.g., Gazebo) to verify algorithm performance and system safety.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailProjectMRGM"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailProjectMRGM')) {
+             document.getElementById('currentYearDetailProjectMRGM').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

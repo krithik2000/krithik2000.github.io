@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Tracking UAV (Mambo Drone) - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="Krithik_Rajavelu_Resume.pdf" class="nav-button resume-button" download="Krithik_Rajavelu_Resume.pdf">Resume</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Visual Tracking UAV - Mambo Drone</h2>
+                
+
+                <div class="card project-details-content"> 
+                    
+                    <!-- Single Local Video for Mambo Drone Project -->
+                    <!-- ADDED video-container-sm class to make video smaller -->
+                    <div class="video-container local-video-embed video-container-sm"> 
+                        <video controls width="100%">
+                            <source src="Videos/Parrot Mambo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <h4>Project Overview and Key Contributions:</h4>
+                    <ul>
+                        <li>Engineered a high-performance, low-level flight control algorithm specifically for a Parrot Mambo drone, enabling precise and responsive maneuvers.</li>
+                        <li>Integrated an Extended Kalman Filter (EKF) into the flight control system for robust state estimation, fusing data from onboard sensors (e.g., IMU, altimeter, camera).</li>
+                        <li>Championed the development and optimization of a red color detection algorithm for visual tracking purposes.</li>
+                        <li>Successfully reduced the processing time of the color detection algorithm by 30% through algorithmic improvements and efficient coding practices, significantly enhancing real-time tracking capabilities.</li>
+                        <li>Implemented visual servoing techniques to enable the Mambo drone to autonomously track and follow a designated red-colored object.</li>
+                        <li>Conducted flight tests to validate the performance of the control algorithms, state estimation, and visual tracking system.</li>
+                        <li>Analyzed flight data to identify areas for improvement and further refine system parameters.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailProjectUAV"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailProjectUAV')) {
+             document.getElementById('currentYearDetailProjectUAV').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

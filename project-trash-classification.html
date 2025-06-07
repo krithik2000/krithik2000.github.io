@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Trash Classification - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Re-usable Header -->
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <!-- Assuming you want the resume button on all project detail pages too -->
+                    <li><a href="Krithik_Rajavelu_Resume.pdf" class="nav-button resume-button" download="Krithik_Rajavelu_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#projects" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Sustainable Trash Classification using CNN, sorting with M280 Cobot</h2>
+                
+
+                <div class="card project-details-content"> 
+                    
+                    <!-- NEW IMAGE: Prototype -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Prototype</h4>
+                        <div class="image-container project-image" style="max-width: 720px; margin: 0 auto;">
+                            <!-- Make sure this image is in your 'images' folder -->
+                            <img src="images/trash_classification_prototype.png" alt="">
+                        </div>
+                    </div>
+                    <!-- End NEW IMAGE -->
+
+                    <!-- Single Local Video -->
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <source src="Videos/Object Classification with M280 robot.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <h4>Project Overview and Key Contributions:</h4>
+                    <ul>
+                        <li>Developed and implemented a sophisticated trash classification system leveraging Convolutional Neural Networks (CNNs) for accurate identification of recyclable vs. non-recyclable items.</li>
+                        <li>Integrated the CNN model with an M280 Collaborative Robot (Cobot) to automate the physical sorting process.</li>
+                        <li>Designed and programmed the Cobot's pick and place operations, ensuring precise grasping, movement, and segregation of classified items into their designated bins.</li>
+                        <li>Trained the CNN model using a custom dataset of trash items, employing data augmentation techniques to improve model robustness and generalization.</li>
+                        <li>Responsible for the perception pipeline, including image acquisition from a camera, pre-processing, and feeding data to the CNN for inference.</li>
+                        <li>Implemented communication protocols between the vision system (running the CNN) and the M280 Cobot controller.</li>
+                        <li>Evaluated system performance based on classification accuracy, sorting speed, and reliability.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailProjectTrash"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailProjectTrash')) {
+             document.getElementById('currentYearDetailProjectTrash').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

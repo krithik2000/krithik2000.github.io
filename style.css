@@ -1,0 +1,685 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container { /* This is for main content sections, not hero-intro */
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto; 
+    flex-grow: 1;
+}
+
+/* Links */
+a {
+    color: #00C6FF;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+a:hover {
+    color: #33daff;
+    text-shadow: 0 0 5px #00C6FF;
+}
+
+/* Main Header - STACKED & CENTERED LAYOUT */
+.main-header {
+    background-color: #1a1a1a;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.name-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.name-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.name-container .degrees {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.95em;
+    color: #b0b0b0;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.main-nav {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin: 5px 8px; 
+}
+
+.main-nav ul li a {
+    color: #E0E0E0;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #00C6FF;
+    color: #121212;
+    text-shadow: none;
+}
+
+.nav-button.resume-button {
+    background-color: #00C6FF;
+    color: #121212;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 198, 255, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.nav-button.resume-button:hover {
+    background-color: #00a5d9;
+    color: #FFFFFF;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 198, 255, 0.3);
+    text-shadow: none;
+}
+
+
+/* === HERO INTRO SECTION STYLES === */
+.hero-intro-section {
+    padding: 40px 5% 60px;
+    background-color: #161616;
+}
+
+.hero-intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-photo-container {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00C6FF;
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.3);
+}
+
+.typing-text-container {
+    flex-grow: 1;
+    color: #E0E0E0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.15em;
+    line-height: 1.7;
+    min-height: 60px;
+}
+
+#typing-text .cursor {
+    display: inline-block;
+    background-color: #00C6FF;
+    margin-left: 3px;
+    width: 3px;
+    animation: blink 0.8s infinite;
+    height: 1.15em;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+/* Content Sections on Main Page & Detail Pages */
+.content-section, .detail-page-container {
+    padding-top: 160px; 
+    margin-bottom: 50px; 
+}
+.detail-page-container {
+    margin-bottom: 50px; 
+}
+.detail-page-container .content-section { 
+    padding-top: 0; 
+    margin-bottom: 0;
+}
+
+
+.content-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #00C6FF;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00C6FF;
+    display: inline-block;
+}
+.content-section h2 i {
+    margin-right: 10px;
+}
+
+/* Card Styling (Base) */
+.card {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.05);
+    border: 1px solid #2c2c2c;
+}
+#about .card, #skills .card, #contact .card, #projects .project-item.card {
+    margin-bottom: 25px;
+}
+
+/* About Me Section */
+#about .card p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+#about .card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Experience Section - Clickable Timeline Items */
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+.timeline::before {
+    content: ''; position: absolute; left: 10px; top: 0; bottom: 0;
+    width: 3px; background-color: #00C6FF; opacity: 0.3; border-radius: 2px;
+}
+
+.timeline-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 30px;
+}
+.timeline-item-link:last-of-type {
+    margin-bottom: 0;
+}
+
+.timeline-item.card.clickable-card {
+    position: relative;
+    margin-bottom: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #2c2c2c;
+}
+.timeline-item.card.clickable-card::before {
+    content: ''; position: absolute;
+    left: -53px;
+    top: 35px; 
+    width: 14px; height: 14px; border-radius: 50%;
+    background-color: #00C6FF; border: 3px solid #121212;
+    z-index: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-item-link:hover .clickable-card {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 198, 255, 0.15);
+    border-color: #00C6FF;
+}
+.timeline-item-link:hover .clickable-card::before {
+    background-color: #33daff;
+    transform: scale(1.15);
+}
+
+/* Summary inside clickable experience/project card on index.html */
+.item-summary h3 {
+    color: #E0E0E0;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.item-summary .company { 
+    font-weight: 400;
+    color: #00C6FF;
+}
+
+.item-summary .date { 
+    font-family: 'Roboto Mono', monospace; font-size: 0.9em; color: #888888; margin-bottom: 0;
+}
+
+
+/* Projects Section - Clickable Links (on index.html) */
+.project-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 25px;
+}
+.project-item-link:last-of-type {
+    margin-bottom: 0;
+}
+.project-item-link:hover .clickable-card { 
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 198, 255, 0.15);
+    border-color: #00C6FF;
+}
+
+
+/* Skills Section */
+.skills-card-container { padding: 30px; }
+.skills-layout { display: flex; flex-wrap: wrap; gap: 30px; }
+.skill-category-block {
+    flex: 1; min-width: 250px; background-color: #252525;
+    padding: 20px; border-radius: 6px; border: 1px solid #333;
+}
+.skill-category-block h4 {
+    font-weight: 600; font-size: 1.15em; color: #00C6FF;
+    margin-bottom: 15px; display: flex; align-items: center;
+}
+.skill-category-block h4 i { margin-right: 8px; font-size: 1.2em; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill-tags span {
+    background-color: #333; color: #00C6FF; padding: 6px 12px;
+    border-radius: 20px; font-size: 0.9em; font-family: 'Roboto Mono', monospace;
+    border: 1px solid #444; transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+.skill-tags span:hover { background-color: #00C6FF; color: #121212; transform: translateY(-2px); }
+
+
+/* Contact Section */
+#contact .card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+#contact .card p:last-child {
+    margin-bottom: 0;
+}
+#contact .card .icon-prefix {
+    margin-right: 12px;
+    font-size: 1.3em;
+    color: #00C6FF;
+    width: 20px;
+    text-align: center;
+}
+
+
+/* Styles for Detail Pages */
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: #00C6FF;
+    padding: 10px 18px;
+    border: 1.5px solid #00C6FF;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+.back-link:hover {
+    background-color: #00C6FF;
+    color: #121212;
+    text-shadow: none;
+}
+.back-link i {
+    margin-right: 8px;
+}
+
+.detail-page-container > .content-section > h2 { 
+    font-size: 1.9em; 
+    margin-bottom: 10px;
+    border-bottom-width: 2.5px;
+    display: block;
+}
+
+.project-subtitle, .experience-subtitle { /* Subtitle is now part of H2 text flow */
+    font-size: 0.8em; /* Relative to parent H2, so effectively 0.8 * H2_font_size */
+    color: #b0b0b0;
+    font-weight: 400;
+    /* display: block; REMOVED - let it flow inline */
+    /* margin-top: 2px; REMOVED */
+    white-space: normal; 
+}
+
+.company-detail { 
+    font-weight: 500;
+    color: #00C6FF;
+}
+
+.date-detail { 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    color: #a0a0a0;
+    margin-bottom: 30px;
+}
+
+.experience-details-content.card,
+.project-details-content.card { 
+    background-color: #202020;
+    padding: 30px;
+}
+.experience-details-content h4,
+.project-details-content h4 { 
+    font-size: 1.2em;
+    color: #00C6FF;
+    margin-top: 20px; 
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.detail-page-container > .content-section > h2.project-main-title-long ~ .card .project-details-content h4:first-of-type {
+    margin-top: 25px;
+}
+
+
+.experience-details-content ul,
+.project-details-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.experience-details-content ul li,
+.project-details-content ul li {
+    margin-bottom: 14px;
+    line-height: 1.8;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.05em;
+}
+.experience-details-content ul li::before { 
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #00C6FF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.project-details-content ul li::before { 
+    content: '▹';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #00C6FF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Video Container Styles */
+.video-container {
+    width: 100%;
+    max-width: 720px; 
+    margin: 0 auto 30px auto;
+    background-color: #121212;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.video-container video { 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.video-container.video-container-sm {
+    max-width: 560px !important; 
+}
+
+
+/* Image Container Styles */
+.image-container {
+    max-width: 500px; 
+    margin: 30px auto 30px auto;
+    border-radius: 6px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background-color: #202020; 
+}
+.image-container img { 
+    display: block;
+    width: 100%; 
+    height: auto;  
+}
+.project-image { 
+    border: 1px solid #333;
+}
+
+.project-details-content .image-container.project-image img,
+.experience-details-content .image-container.project-image img {
+    max-height: 50vh;   
+    max-width: 100%;    
+    width: auto;        
+    height: auto;       
+    object-fit: contain;
+    display: block;     
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- CSS Changes for Long Project Titles --- */
+.project-item-link .item-summary h3 {
+    font-size: 1.1em;  /* Reduced slightly for better fitting of long titles */
+    white-space: normal; 
+    overflow: visible;   
+    text-overflow: clip; 
+    line-height: 1.3; /* Adjusted line height */   
+}
+
+.detail-page-container > .content-section > h2.project-main-title-long {
+    font-size: 1.4em;    /* STARTING POINT - REDUCED. Adjust as needed. */
+    white-space: normal; /* Allows wrapping if it's still too long */
+    overflow: visible;   
+    text-overflow: clip; 
+    line-height: 1.3;    
+    border-bottom-width: 2px; 
+    margin-bottom: 20px; /* Increased margin if title wraps */
+}
+
+/* Remove styling for .project-subtitle as it's now part of the H2 flow */
+/* .detail-page-container > .content-section > h2.project-main-title-long + .project-subtitle { */
+    /* margin-top: 8px;  REMOVED */
+    /* font-size: 0.75em; REMOVED */
+/* } */
+/* --- End CSS Changes --- */
+
+
+/* Footer */
+footer, .detail-page-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 0.9em;
+    color: #777777;
+    background-color: #1a1a1a;
+}
+
+/* Responsive adjustments */
+@media (min-width: 769px) { 
+    .name-container h1 {
+        font-size: 2.5em;
+    }
+    .name-container .degrees {
+        font-size: 1em;
+        max-width: 800px;
+    }
+    .main-nav ul li a {
+        font-size: 1.05em;
+    }
+    .hero-intro-section {
+        padding: 60px 5% 80px;
+    }
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+    }
+    .typing-text-container {
+        font-size: 1.25em;
+        min-height: 70px; 
+    }
+    #typing-text .cursor {
+        height: 1.25em;
+    }
+}
+
+@media (max-width: 768px) { 
+    .container, .detail-page-container {
+        width: 95%;
+    }
+    .name-container h1 {
+        font-size: 2em;
+    }
+    .name-container .degrees {
+        font-size: 0.9em;
+        white-space: normal; 
+        max-width: 100%;
+        padding: 0 2px;
+    }
+    .main-nav ul li a {
+        font-size: 0.95em;
+    }
+    .nav-button.resume-button {
+        padding: 7px 12px;
+        font-size: 0.9em;
+        margin-left: 0; 
+    }
+
+    .hero-intro-section {
+        padding: 30px 5% 40px;
+    }
+    .hero-intro-content {
+        flex-direction: column; 
+        text-align: center;
+        gap: 25px;
+    }
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 15px; 
+    }
+    .typing-text-container {
+        font-size: 1.05em;
+        min-height: 50px;
+    }
+    #typing-text .cursor {
+        height: 1.05em;
+    }
+    
+    .content-section, .detail-page-container {
+        padding-top: 150px;
+    }
+    .content-section h2, 
+    .detail-page-container > .content-section > h2 { 
+        font-size: 1.7em;
+    }
+
+    .detail-page-container > .content-section > h2.project-main-title-long {
+        font-size: 1.3em; /* STARTING POINT for tablets - REDUCED. Adjust as needed. */
+        white-space: normal;
+    }
+
+    .project-item-link .item-summary h3 { 
+         font-size: 1.0em; /* Reduced slightly for tablets */
+         white-space: normal;
+         line-height: 1.2;
+    }
+
+    .timeline { padding-left: 30px; }
+    .timeline-item.card.clickable-card::before {
+        left: -43px;
+        top: calc(50% - 7px); 
+    }
+    .skills-layout { flex-direction: column; gap: 20px; }
+    .skill-category-block { min-width: 100%; }
+    .experience-details-content ul li,
+    .project-details-content ul li { font-size: 1em; }
+}
+
+@media (max-width: 480px) { 
+    .name-container h1 { font-size: 1.8em; }
+    .name-container .degrees { font-size: 0.85em; }
+    .main-nav ul li a { font-size: 0.9em; }
+    
+    .hero-intro-section {
+        padding: 20px 5% 30px;
+    }
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+    .typing-text-container {
+        font-size: 0.95em;
+        min-height: 40px;
+    }
+     #typing-text .cursor {
+        height: 0.95em;
+    }
+ 
+    .project-item-link .item-summary h3 { 
+         font-size: 0.9em; /* Further reduced for mobile */
+         line-height: 1.2;
+    }
+
+    .content-section, .detail-page-container {
+        padding-top: 160px;
+    }
+    .detail-page-container > .content-section > h2.project-main-title-long {
+        font-size: 1.1em; /* STARTING POINT for mobile - REDUCED. Adjust as needed. */
+    }
+    .experience-details-content ul li,
+    .project-details-content ul li { font-size: 0.95em; }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASU LAB Experience - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <!-- Assuming you want the resume button on all experience detail pages too -->
+                    <li><a href="Krithik_Rajavelu_Resume.pdf" class="nav-button resume-button" download="Krithik_Rajavelu_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#experience" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Robotics Software Engineer <span class="company-detail">| ASU LAB</span></h2>
+                <p class="date-detail">Aug 2023 - May 2024</p>
+
+                <div class="card experience-details-content">
+                    
+                    <!-- NEW IMAGE: Navigation to Selected Parking Spot -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Navigation to Selected Parking Spot</h4>
+                        <div class="image-container project-image" style="max-width: 720px; margin: 0 auto;">
+                            <!-- Make sure this image is in your 'images' folder -->
+                            <img src="images/asu_parking_navigation_views.png" alt="">
+                        </div>
+                    </div>
+                    <!-- End NEW IMAGE -->
+
+                    <!-- Single Local Video for ASU LAB -->
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <source src="Videos/Intelligent Parking Guidance System.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <h4>Project: Intelligent Parking Guidance through AI and IoT</h4>
+                    <ul>
+                        <li>Contributed to the development of an innovative system aimed at empowering both human drivers and autonomous vehicles with intelligent parking guidance.</li>
+                        <li>As a key member of the localization team, played a significant role in designing and implementing a robust parking space localization algorithm.</li>
+                        <li>Developed and refined components of a comprehensive vehicle localization and tracking pipeline, crucial for the intelligent parking framework.</li>
+                        <li>Utilized sensor fusion techniques (e.g., combining data from cameras, LiDAR, IMU) for accurate vehicle state estimation and parking spot detection.</li>
+                        <li>Implemented and tested algorithms in simulated environments (e.g., Gazebo with ROS) and potentially on physical testbeds.</li>
+                        <li>Collaborated with team members on system integration, data collection, and performance analysis of the localization modules.</li>
+                        <li>Documented algorithm design, implementation details, and experimental results.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailASU"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailASU')) {
+             document.getElementById('currentYearDetailASU').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

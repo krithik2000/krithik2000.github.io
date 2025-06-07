@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsman Automation Experience - Krithik Rajavelu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="name-container">
+                <h1>KRITHIK RAJAVELU</h1>
+                <p class="degrees">BE - Robotics and Automation  |  MS - Robotics and Autonomous Systems</p>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="Krithik_Rajavelu_Resume.pdf" class="nav-button resume-button" download="Krithik_Rajavelu_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container detail-page-container">
+            <section class="content-section">
+                <a href="index.html#experience" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                
+                <h2>Mechatronics Engineer <span class="company-detail">| Craftsman Automation</span></h2>
+                <p class="date-detail">Jan 2022 - May 2022</p>
+
+                <div class="card experience-details-content">
+                    
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Final Assembly</h4>
+                        <div class="image-container project-image" style="max-width: 720px; margin: 0 auto;">
+                            <img src="images/craftsman_final_assembly.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+                        <div style="flex: 1; min-width: 280px; max-width: 48%; text-align: center;">
+                            <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Manual Mode</h4>
+                            <div class="image-container project-image" style="margin: 0 auto;">
+                                <!-- CORRECTED EXTENSION HERE -->
+                                <img src="images/craftsman_manual_mode.jpeg" alt="Manual Mode App Interface">
+                            </div>
+                        </div>
+                        <div style="flex: 1; min-width: 280px; max-width: 48%; text-align: center;">
+                            <h4 style="font-size: 1.2em; color: #E0E0E0; margin-bottom: 10px; font-weight: 500;">Autonomous Mode</h4>
+                            <div class="image-container project-image" style="margin: 0 auto;">
+                                <!-- CORRECTED EXTENSION HERE -->
+                                <img src="images/craftsman_autonomous_mode.jpeg" alt="Autonomous Mode App Interface">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <source src="Videos/Pick and Place Robot .mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="video-container local-video-embed">
+                        <video controls width="100%">
+                            <source src="Videos/Pick and Place Robot Autonomous mode.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <h4>Key Responsibilities and Achievements:</h4>
+                    <ul>
+                        <li>Designed an IoT-driven pick and place robot employing Arduino Uno, enabling seamless wireless control via a cloud-connected mobile application.</li>
+                        <li>Enhanced the pick and place robot by implementing autonomous operational capabilities, moving beyond solely remote control.</li>
+                        <li>Developed and integrated sensor systems for object detection and environmental awareness for the autonomous pick and place robot.</li>
+                        <li>Programmed microcontroller logic for precise motor control, movement sequences, and wireless communication protocols.</li>
+                        <li>Created the mechanical design and assembly of the robotic system, ensuring robust and reliable operation.</li>
+                        <li>Troubleshot and resolved hardware and software issues during the development and testing phases.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="detail-page-footer">
+            <p>© <span id="currentYearDetailCraftsman"></span> Krithik Rajavelu. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        if (document.getElementById('currentYearDetailCraftsman')) {
+             // Corrected typo: TDate to new Date()
+             document.getElementById('currentYearDetailCraftsman').textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
